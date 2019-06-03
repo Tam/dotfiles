@@ -92,6 +92,10 @@
 	opacity: 0.25;
 }
 
+.tab-background {
+	border-radius: 0 0 7px 7px;
+}
+
 /* URL Bar */
 #urlbar,
 .searchbar-textbox {
@@ -200,7 +204,18 @@
 
 
 /* Move traffic lights in the space carved above. */
+/* Uncomment for windows *//*
 .titlebar-buttonbox-container {
 	position: absolute;
 	margin-top: -39px
 }
+*/
+/* Uncomment for mac */
+.titlebar-buttonbox-container {
+	display: none;
+}
+
+#nav-bar {
+	padding-left: 4px !important;
+}
+/*/
