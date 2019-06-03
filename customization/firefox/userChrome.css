@@ -57,7 +57,6 @@
 	display: none;
 }
 
-/* NOTE: Use the "Customize" menu in FF to move this button to the right-hand side */
 #PanelUI-button {
 	margin-inline-end: -7px;
 	opacity: 0.25;
@@ -85,10 +84,28 @@
 	display: none !important;
 }
 
+/* Toolbar Buttons */
+.toolbarbutton-1:not(:hover), 
+:root:not([customizing]) .toolbarbutton-1 { 
+	opacity: 0.5;
+}
+
+.toolbarbutton-1:not(:hover):-moz-window-inactive, 
+:root:not([customizing]) .toolbarbutton-1:-moz-window-inactive[disabled="true"] {
+	opacity: 0.25;
+}
+
 /* URL Bar */
+#urlbar,
+.searchbar-textbox {
+	opacity: 0.75 !important;
+	transition: opacity 0.15s ease;
+}
+
 #urlbar[focused="true"],
 #urlbar:hover,
 .searchbar-textbox:hover {
+	opacity: 1 !important;
 	background: transparent !important;
 	box-shadow: none !important;
 	border: none !important;
@@ -188,5 +205,5 @@
 /* Move traffic lights in the space carved above. */
 .titlebar-buttonbox-container {
 	position: absolute;
-	margin-top: -36px
+	margin-top: -39px
 }
