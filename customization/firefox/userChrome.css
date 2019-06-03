@@ -46,14 +46,11 @@
 	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Hide the back button unless we can actually go back. */
-/*#back-button[disabled="true"] {
-  display: none;
-}*/
-
-/* Hide the forward button always */
+/* Hide these buttons always */
 #forward-button,
-#developer-button {
+#back-button,
+#developer-button,
+#stop-reload-button {
 	display: none;
 }
 
