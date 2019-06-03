@@ -57,18 +57,10 @@
 	display: none;
 }
 
-/* Re-order the menu button. */
-#nav-bar-customization-target {
-	padding-right: 33px;
-}
-
-:root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #nav-bar[brighttext] > #PanelUI-button,
+/* NOTE: Use the "Customize" menu in FF to move this button to the right-hand side */
 #PanelUI-button {
-	position: absolute;
-	right: 0;
-	height: 100%;
-	display: flex;
-	opacity: 0.5;
+	margin-inline-end: -7px;
+	opacity: 0.25;
 }
 
 #customization-panel-container,
