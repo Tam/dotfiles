@@ -95,6 +95,9 @@
 .tab-background {
 	border-radius: 0 0 7px 7px;
 }
+.tab-background[fadein="true"] {
+	transition: background 0.15s ease !important;
+}
 
 /* URL Bar */
 #urlbar,
