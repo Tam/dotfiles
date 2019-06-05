@@ -1,0 +1,11 @@
+html {
+	tab-size: 4;
+	-moz-tab-size: 4;
+}
+
+@-moz-document domain(github.com) {
+	pre, .highlight, .diff-table, .tab-size {
+		tab-size: 4 !important;
+		-moz-tab-size: 4 !important;
+	}
+}
