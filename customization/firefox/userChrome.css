@@ -4,6 +4,10 @@
 	}
 }
 
+* {
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
 /**
  * Most of the UI modifications come from https://www.reddit.com/r/FirefoxCSS/comments/a9vgxl/minimalist_theme/ by u/griam
  * This version modified from https://github.com/eramdam/dotfiles/blob/master/useful-conf/firefox-userchrome/userChrome.css
