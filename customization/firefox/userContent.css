@@ -3,6 +3,10 @@ html {
 	-moz-tab-size: 4;
 }
 
+* {
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
 @-moz-document domain(github.com) {
 	pre, .highlight, .diff-table, .tab-size {
 		tab-size: 4 !important;
