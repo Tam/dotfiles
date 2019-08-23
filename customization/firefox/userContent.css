@@ -13,3 +13,28 @@ html {
 		-moz-tab-size: 4 !important;
 	}
 }
+
+@-moz-document regexp("https?:\/\/dev\\..*") {
+	html::after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		z-index: 999999999999999999;
+		background: repeating-linear-gradient(45deg, #F4B638, #F4B638 4px, #0c0c0d 4px, #0c0c0d 10px);
+	}
+}
+@-moz-document regexp("https?:\/\/.*\\.dev.*") {
+	html::after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		z-index: 999999999999999999;
+		background: repeating-linear-gradient(45deg, #F4B638, #F4B638 4px, #0c0c0d 4px, #0c0c0d 10px);
+	}
+}
