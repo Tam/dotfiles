@@ -26,7 +26,7 @@ html {
 		background: repeating-linear-gradient(45deg, #F4B638, #F4B638 4px, #0c0c0d 4px, #0c0c0d 10px);
 	}
 }
-@-moz-document regexp("https?:\/\/.*\\.dev.*") {
+@-moz-document regexp("https?:\/\/.*\\.ethr\\.dev.*") {
 	html::after {
 		content: '';
 		position: fixed;
