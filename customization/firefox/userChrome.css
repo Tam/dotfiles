@@ -8,6 +8,11 @@
 	-moz-osx-font-smoothing: grayscale !important;
 }
 
+/* Hide weird blue dot in address bar */
+
+#identity-box[pageproxystate="valid"].grantedPermissions::before {
+	display: none;
+}
 
 /* Safari-esque alerts */
 
